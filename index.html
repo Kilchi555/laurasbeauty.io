@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +7,9 @@
     <title>
       Laura's Beauty - Nails & Lashes in Reinach AG.
     </title>
-    <meta name="description" content="Simple landind page" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Homepage von Laura's Beauty - Nails and Lashes" />
+    <meta name="keywords" content="nagelstudio wimperverlängerung gelnägel " />
+    <meta name="author" content="Pascal Kilchenmann" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
@@ -110,7 +110,7 @@
         </div>
         <div class="flex flex-wrap">
           <div class="w-5/6 sm:w-1/2 p-6">
-            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3" id="nails">
               Nails
             </h3>
             <p class="text-gray-600 mb-8">
@@ -118,7 +118,7 @@
             </p>
           </div>
           <div class="w-full sm:w-1/2 p-6">
-            <img class="id:nails w-full sm:h-64 mx-auto rounded-full" src="Nägel.png">
+            <img class="w-full sm:h-64 mx-auto rounded-full" src="Nägel.png">
           </div>
         </div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
@@ -127,7 +127,7 @@
           </div>
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
-              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3" id="lashes">
                 Lashes
               </h3>
               <p class="text-gray-600 mb-8">
@@ -139,7 +139,7 @@
           <div class="flex flex-wrap">
             <div class="w-full sm:w-1/2 p-6 mt-6">
               <div class="align-middle">
-                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3" id="face">
                   Face & Lips
                 </h3>
                 <p class="text-gray-600 mb-8">
@@ -314,7 +314,7 @@
     </section>
     <div
   class="block mx-auto max-w-md rounded-lg bg-white p-6 m-2 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-  <form action="#">
+  <form action="#" id="form">
     <!--Name input-->
     <div class="relative mb-6" data-twe-input-wrapper-init>
       <input
