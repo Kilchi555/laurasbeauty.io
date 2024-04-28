@@ -15,6 +15,9 @@
       rel="stylesheet"
       href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
     <!--Replace with your tailwind.css once created-->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
@@ -340,15 +343,13 @@
       data-twe-carousel-init
       data-twe-carousel-slide>
       <div
-        class="relative overflow-hidden after:clear-both after:block after:content-[''] place-content-center flex justify-center"
-      >
+        class="relative overflow-hidden after:clear-both after:block after:content-[''] place-content-center flex justify-center">
         <!--First Testimonial / Carousel item-->
         <div
-          class="w-4/5 visible bg-white text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none shadow pt-6 px-6"
+          class="w-4/5 hidden bg-white text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none shadow pt-6 px-6"
           data-twe-carousel-active
           data-twe-carousel-item
-          style="backface-visibility: visible"
-        >
+          style="backface-visibility: hidden">
           <a
             href="https://maps.app.goo.gl/S8uKkX6hafDRQyoGA"
             class="mx-auto md:text-xl text-neutral-600"
@@ -366,13 +367,12 @@
 
         <!--Second Testimonial / Carousel item-->
         <div
-          class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="w-4/5 hidden bg-white text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none shadow pt-6 px-6"
           data-twe-carousel-item
-          style="backface-visibility: hidden"
-        >
+          style="backface-visibility: hidden">
           <a
             href="https://maps.app.goo.gl/mvkGEjZYVrmN7wV67"
-            class="mx-auto max-w-4xl text-xl text-neutral-100"
+            class="mmx-auto md:text-xl text-neutral-600"
           >
             "Schönes Nagelstudio, tolle Atmosphäre, super Arbeit und freundliche
             Bedienung. Danke Laura! Meine Frau ist ganz Happy :-D Wir kommen
@@ -383,69 +383,80 @@
 
         <!--Third Testimonial / Carousel item-->
         <div
-          class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="w-4/5 hidden bg-white text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none shadow pt-6 px-6"
           data-twe-carousel-item
           style="backface-visibility: hidden"
         >
           <a
             href="https://maps.app.goo.gl/BAu4nEhLLgcuW6L78"
-            class="mx-auto max-w-4xl text-xl text-neutral-100"
+            class="mx-auto md:text-xl text-neutral-600"
           >
             "Saubere Arbeit, tolle Nageldesigns, bin rundum zufrieden😍 …"
           </a>
-          <p class="text-neutral-500">- Laura K.</p>
+          <div class="mb-6 mt-12 flex justify-center">
+            <p class="text-neutral-500">- Laura K.</p>
+          </div>
         </div>
 
         <!--Forth Testimonial / Carousel item-->
         <div
-          class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="w-4/5 hidden bg-white text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none shadow pt-6 px-6"
           data-twe-carousel-item
           style="backface-visibility: hidden"
         >
           <a
             href="https://maps.app.goo.gl/5TmNrKFZD4ifikhQ6"
-            class="mx-auto max-w-4xl text-xl text-neutral-100"
+            class="mx-auto md:text-xl text-neutral-600"
           >
             "Sehr gute Frau und ganz nett ...und gute Qualität...danke Laura"
           </a>
-          <p class="text-neutral-500">- Anca G.</p>
+          <div class="mb-6 mt-12 flex justify-center">
+            <p class="text-neutral-500">- Anca G.</p>
+          </div>
+          
         </div>
 
         <!--Fifth Testimonial / Carousel item-->
         <div
-          class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="w-4/5 hidden bg-white text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none shadow pt-6 px-6"
           data-twe-carousel-item
           style="backface-visibility: hidden"
         >
           <a
             href="https://maps.app.goo.gl/urffaKFLosLswUbc6"
-            class="mx-auto max-w-4xl text-xl text-neutral-100"
+            class="mx-auto md:text-xl text-neutral-600"
           >
             "Laura hat genau nach meinen Wünschen alles umgesetzt! Ich komme
             wieder…👍🏾 …"
           </a>
-          <p class="text-neutral-500">- Laura M.</p>
+          <div class="mb-6 mt-12 flex justify-center">
+            <p class="text-neutral-500">- Laura M.</p>
+          </div>
+          
         </div>
 
         <!--Fifth Testimonial / Carousel item-->
         <div
-          class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          class="w-4/5 hidden bg-white text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none shadow pt-6 px-6"
           data-twe-carousel-item
           style="backface-visibility: hidden"
         >
           <a
             href="https://maps.app.goo.gl/GrNELtramiQ2pPU77"
-            class="mx-auto max-w-4xl text-xl text-neutral-100"
+            class="mx-auto md:text-xl text-neutral-600"
           >
             "Das beste Nagelstudio, meine Frau ist nach jedem Besuch bei Laura
             total happy."
           </a>
-          <p class="text-neutral-500">- Christian S.</p>
+          <div class="mb-6 mt-12 flex justify-center">
+            <p class="text-neutral-500">- Christian S.</p>
+          </div>
+          
         </div>
 
         <!--Carousel Controls - prev item-->
         <button
-          class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+          class="absolute bottom-0 left-0 top-0 z-[1] flex w-[10%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
           type="button"
           data-twe-target="#carouselExampleCaptions"
           data-twe-slide="prev"
@@ -473,7 +484,7 @@
         </button>
         <!--Carousel Controls - next item-->
         <button
-          class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+          class="absolute bottom-0 right-0 top-0 z-[1] flex w-[10%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
           type="button"
           data-twe-target="#carouselExampleCaptions"
           data-twe-slide="next"
@@ -828,6 +839,7 @@
     </footer>
     <!-- jQuery if you need it -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
 
 
     <script>
