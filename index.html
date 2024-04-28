@@ -42,7 +42,7 @@
       >
         <div class="pl-4 flex items-center">
           <a
-            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl md:text-4xl"
+            class="toggleColour text-white hover:text-[#382c5e] hover:no-underline font-bold text-2xl md:text-4xl"
             href="https://laurasbeauty.ch"
           >
             LAURA'S BEAUTY.ch
@@ -51,7 +51,7 @@
         <div class="block md:hidden pr-4">
           <button
             id="nav-toggle"
-            class="flex items-center p-1 text-[#382c5e] hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            class="flex items-center p-1 text-[#382c5e] hover:text-gray-900 focus:outline-none  transform transition hover:scale-105  ease-in-out"
           >
             <svg
               class="fill-current h-6 w-6"
@@ -77,14 +77,14 @@
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-black no-underline hover:text-[#382c5e] hover:text-underline py-2 px-4"
+                class=" inline-block text-black no-underline hover:text-[#382c5e] hover:text-underline py-2 px-4"
                 href="#preise"
                 >Preise</a
               >
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-black no-underline hover:text-[#382c5e] hover:text-underline py-2 px-4"
+                class=" inline-block text-black no-underline hover:text-[#382c5e] hover:text-underline py-2 px-4"
                 href="#ubermich"
                 >Über mich</a
               >
@@ -255,9 +255,9 @@
       </div>
     </section>
     <section class="bg-white border-b py-8">
-      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      <div class="container mx-auto flex flex-wrap pt-6 pb-12">
         <h2
-          class="w-full my-2 md:text-4xl text-3xl font-bold leading-tight text-center text-gray-800"
+          class="w-full pb-4 md:text-4xl text-3xl font-bold leading-tight text-center text-gray-800"
           id="ubermich"
         >
           Das kannst <span class="text-[#382c5e] text-4xl">Du</span> von mir erwarten...
@@ -273,11 +273,11 @@
           <div
             class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
           >
-            <a class="flex flex-wrap no-underline hover:no-underline">
+            <a class="flex flex-wrap no-underline hover:no-underline pt-5">
               <p class="w-full text-gray-600 text-s md:text-sm px-6">
                 Qualität
               </p>
-              <div class="w-full font-bold text-xl text-[#382c5e] px-6">
+              <div class="w-full font-bold text-xl text-[#382c5e] px-5">
                 Ich stelle hohe Ansprüche an mich selbst.
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
@@ -296,7 +296,7 @@
           <div
             class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
           >
-            <a class="flex flex-wrap no-underline hover:no-underline">
+            <a class="flex flex-wrap no-underline hover:no-underline pt-5">
               <p class="w-full text-gray-600 text-s md:text-sm px-6">
                 Ehrlichkeit
               </p>
@@ -318,7 +318,7 @@
           <div
             class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
           >
-            <a class="flex flex-wrap no-underline hover:no-underline">
+            <a class="flex flex-wrap no-underline hover:no-underline pt-5">
               <p class="w-full text-gray-600 text-s md:text-sm px-6">
                 Flexibilität
               </p>
@@ -339,13 +339,13 @@
     <!--Carousel-->
     <div
       id="carouselExampleCaptions"
-      class="relative bg-white min-h-96"
+      class="relative bg-white min-h-96 pb-12"
       data-twe-carousel-init
       data-twe-carousel-slide
       data-twe-smooth-scroll-init>
       
       <h2
-      class="relative bg-white w-full pt-4 text-4xl md:text-5xl font-bold leading-tight text-center text-gray-800 bg-white"
+      class="relative bg-white w-full pt-12 text-4xl md:text-5xl font-bold leading-tight text-center text-gray-800 bg-white mb-4 px-4"
       id="angebot"
     >
       Das sagen meine Kund:innen
@@ -527,7 +527,7 @@
     </div>
 
     <section class="bg-gray-100 py-8">
-      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+      <div class="container mx-auto px-2 pt-12 pb-12 text-gray-800">
         <h2
           class="w-full my- text-5xl font-bold leading-tight text-center text-gray-800"
           id="preise"
@@ -540,7 +540,7 @@
           ></div>
         </div>
         <div
-          class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4"
+          class="flex flex-col sm:flex-row justify-center pt-12"
         >
           <div
             class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white"
@@ -868,10 +868,13 @@
 
         if (scrollpos > 10) {
           header.classList.add("bg-white");
-          navaction.classList.remove("bg-white");
           navaction.classList.add("bg-[#382c5e]");
           navaction.classList.remove("text-[#382c5e]");
           navaction.classList.add("text-white");
+          navaction.classList.add("hover:text-[#382c5e]");
+          navaction.classList.remove("hover:text-white");
+          navaction.classList.remove("hover:bg-[#382c5e]");
+          navaction.classList.add("hover:bg-white");
           //Use to switch toggleColour colours
           for (var i = 0; i < toToggle.length; i++) {
             toToggle[i].classList.add("text-gray-800");
@@ -881,6 +884,10 @@
           navcontent.classList.remove("bg-gray-100");
           navcontent.classList.add("bg-white");
         } else {
+          navaction.classList.remove("hover:bg-white");
+          navaction.classList.add("hover:bg-[#382c5e]");
+          navaction.classList.add("hover:text-white");
+          navaction.classList.remove("hover:text-[#382c5e]");
           header.classList.remove("bg-white");
           navaction.classList.add("bg-white");
           navaction.classList.remove("bg-[#382c5e]");
@@ -893,8 +900,7 @@
           }
 
           header.classList.remove("shadow");
-          navcontent.classList.remove("bg-white");
-          navcontent.classList.add("bg-gray-100");
+          navcontent.classList.add("bg-white");
         }
       });
     </script>
