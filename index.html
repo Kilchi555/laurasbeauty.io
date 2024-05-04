@@ -5,369 +5,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title alt="Nagelstudio">Laura's Beauty - Nails & Lashes in Reinach AG.</title>
-    <meta
-      name="description"
-      content="Homepage von Laura's Beauty - Nails and Lashes"
-    />
+    <meta name="description" content="Homepage von Laura's Beauty - Nails and Lashes"/>
     <meta name="keywords" content="nagelstudio wimperverlängerung gelnägel" />
     <meta name="author" content="Pascal Kilchenmann" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
     <!--Replace with your tailwind.css once created-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"/>
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <style>
-      .gradient {
-        background: linear-gradient(90deg, #382c5e 0%, #efdfe2 100%);
-      }
-    </style>
+    <style> .gradient { background: linear-gradient(90deg, #382c5e 0%, #efdfe2 100%);}</style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body
-    class="leading-normal tracking-normal text-white gradient"
-    style="font-family: 'Source Sans Pro', sans-serif"
-  >
+  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif">
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
-      <div
-        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
-      >
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 flex items-center">
           <a
             class="toggleColour text-white hover:text-[#382c5e] hover:no-underline font-bold text-2xl md:text-4xl"
-            href="https://laurasbeauty.ch"
-          >
+            href="https://laurasbeauty.ch">
             LAURA'S BEAUTY.ch
           </a>
         </div>
         <div class="block md:hidden pr-4">
-          <button
-            id="nav-toggle"
-            class="flex items-center p-1 text-[#382c5e] hover:text-gray-900 focus:outline-none  transform transition hover:scale-105  ease-in-out"
-          >
-            <svg
-              class="fill-current h-6 w-6"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
+          <button id="nav-toggle" class="flex items-center p-1 text-[#382c5e] hover:text-gray-900 focus:outline-none  transform transition hover:scale-105  ease-in-out">
+            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
           </button>
         </div>
-        <div
-          class="w-full flex-grow md:flex md:items-center md:w-auto hidden mt-2 md:mt-0 bg-white md:bg-transparent text-black p-4 md:p-0 z-20"
-          id="nav-content"
-        >
+        <div id="nav-content" class="w-full flex-grow md:flex md:items-center md:w-auto hidden mt-2 md:mt-0 bg-white md:bg-transparent text-black p-4 md:p-0 z-20">
           <ul class="list-reset md:flex justify-end flex-1 items-center">
             <li class="mr-3">
-              <a
-                class="inline-block py-2 px-4 text-black font-bold no-underline hover:text-[#382c5e]"
-                href="#angebot"
-                >Angebot</a
-              >
+              <a class="inline-block py-2 px-4 text-black font-bold no-underline hover:text-[#382c5e]" href="#angebot">Angebot
+              </a>
             </li> 
             <li class="mr-3">
-              <a
-                class=" inline-block text-black no-underline hover:text-[#382c5e] hover:text-underline py-2 px-4"
-                href="#ubermich"
-                >Über mich</a
-              >
+              <a href="#ubermich" class=" inline-block text-black no-underline hover:text-[#382c5e] hover:text-underline py-2 px-4">Über mich
+              </a>
             </li>
             <li class="mr-3">
-              <a
-                class=" inline-block text-black no-underline hover:text-[#382c5e] hover:text-underline py-2 px-4"
-                href="#preise"
-                >Preise</a
-              >
+              <a href="#preise" class=" inline-block text-black no-underline hover:text-[#382c5e] hover:text-underline py-2 px-4 pb-2">Preise
+              </a>
             </li>
-           
           </ul>
-          <button
-            id="navAction"
-            class="mx-auto md:mx-0 hover:bg-[#382c5e] hover:text-white bg-white text-[#382c5e] font-bold rounded-full mt-4 md:mt-0 py-4 px-8 shadow"
-          >
-            <a href="tel:0041797157027">Anrufen</a>
-          </button>
+          <a href="tel:0041797157027" id="navAction" class="inline-block mx-auto md:mx-0 hover:bg-[#382c5e] hover:text-white bg-white text-[#382c5e] font-bold rounded-full mt-4 md:mt-0 py-4 px-8 shadow">Anrufen</a>
         </div>
       </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
     </nav>
     <!--Hero-->
     <div class="pt-24">
       <div
-        class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center"
-      >
+        class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--Left Col-->
-        <div
-          class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left p-2 pb-4">
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left p-2 pb-4">
           <p class="uppercase tracking-loose w-full">Lashes & Nails</p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
             Hallo und Herzlich Willkommen!
           </h1>
           <p class="leading-normal text-2xl mb-8">
-            Mein Name ist Laura und ich begrüsse Dich ganz herzlich in meinem Nagelstudio im
-            schönen Reinach/AG.
+            Mein Name ist Laura und ich begrüsse Dich ganz herzlich in meinem Nagelstudio im schönen Reinach/AG.
           </p>
-          <button
-            class="mx-auto md:mx-0 hover:text-[#382c5e] bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8  hover:scale-105 duration-300"
-          >
-            <a href="#anmelden">Anmelden</a>
-          </button>
+          <div class="flex justify-center align-middle mx-auto items-center">
+            <a href="tel:+41797157027" class="md:hidden items-center align-middle hover:bg-[#382c5e] hover:text-white bg-white text-gray-800 font-bold rounded-full py-4 px-8">
+            Anrufen
+            </a>
+          </div>
+          
         </div>
         <!--Right Col-->
-        <div class="flex flex-col py-5 p-5 items-center align-middle max-w-md md:w-2/5">
-          <img
-            class="rounded-full"
-            src="Laura.png"
-            alt="Nagelstudio Laura Stefanelli"
-          />
+        <div class="flex flex-col py-5 p-5 items-center align-middle max-w-md md:w-2/5 mb-12">
+          <img class="rounded-full" src="/Images/WebP/Laura.webp" alt="Nagelstudio Laura Stefanelli"/>
         </div>
       </div>
     </div>
     <div class="relative -mt-15 lg:-mt-24">
-      <svg
-        viewBox="0 0 1428 174"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
+      <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g
-            transform="translate(-2.000000, 44.000000)"
-            fill="#FFFFFF"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-              opacity="0.100000001"
-            ></path>
-            <path
-              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-              opacity="0.100000001"
-            ></path>
-            <path
-              d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-              id="Path-4"
-              opacity="0.200000003"
-            ></path>
+          <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"> 
+            </path>
+            <path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001">
+            </path>
+            <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003">
+            </path>
           </g>
-          <g
-            transform="translate(-4.000000, 76.000000)"
-            fill="#FFFFFF"
-            fill-rule="nonzero"
-          >
-            <path
-              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
-            ></path>
+          <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z">
+            </path>
           </g>
         </g>
       </svg>
     </div>
-    <section class="bg-white border-b py-8">
-      <div class="container max-w-5xl mx-auto p-6">
-        <h2
-          class="scroll-m-32 w-full my-2 text-4xl md:text-5xl font-bold leading-tight text-center text-gray-800"
-          id="angebot"
-        >
+    <section class="bg-white flex border-b py-8" id="angebot-container">
+      <div class="container max-w-5xl mx-auto p-6" id="angebot-content">
+        <h2 id="angebot" class="scroll-m-32 w-full my-2 text-4xl md:text-5xl font-bold leading-tight text-center text-gray-800">
           Mein Angebot
         </h2>
         <div class="w-full mb-4">
-          <div
-            class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]"
-          ></div>
+          <div class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]">
+          </div>
         </div>
-        <div class="flex flex-wrap p-6 md:flex-row">
-          <div class="align-middle text-center">
-            <h3
-              class="text-3xl text-gray-800 font-bold leading-none mb-3"
-              id="nails"
-            >
-              Nails
+        <div class="w-full">
+          <div class="text-center p-8">
+            <h3 id="nails" class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Nägel
             </h3>
             <p class="text-gray-600 pb-3 md:text-xl">
               Schöne Nägel sind meine Leidenschaft und deshalb liebe ich meine
               Arbeit. Ich mache alles über Design, Lackierung, Verlängerung,
-              Reparatur, Schneiden & Feilen und vieles mehr.
+              Reparatur, Schneiden & Feilen und vieles mehr. Lass deiner Fantasie freien Lauf
+              und ich werde deinen Nägel den perfekten Schliff geben.
             </p>
           </div>
           <div class="w-full">
-            <img
-              class="mx-auto rounded-full md:w-1/2 w-4/5"
-              src="Nägel.png"
-              alt="Nagelstudio"
-            />
+            <img class="mx-auto rounded-full md:p-4 md:align-middle" src="/Images/WebP/Nägel.webp" alt="Nagelstudio"/>
           </div>
         </div>
-        <div class="flex flex-wrap flex-col-reverse">
-          <div class="w-full mb-8">
-            <img
-              class="mx-auto rounded-full md:w-1/2 w-4/5"
-              src="Wimpern.png"
-              alt="Wimpernverlängerung"
-            />
-          </div>
-          <div class="w-full p-6">
-            <div class="align-middle text-center">
-              <h3
-                class="text-3xl text-gray-800 font-bold mb-3"
-                id="lashes"
-              >
-                Lashes
+        <div class="w-full">
+            <div class="text-center p-8">
+              <h3 class="text-3xl text-gray-800 font-bold mb-3" id="lashes">
+                Wimpern
               </h3>
               <p class="text-gray-600 md:text-xl">
                 Zu einer schönen Frau gehören schöne Wimpern, finde ich. Bei mir
                 kannst du deine Wimpern verlängern lassen, so dass sie richtig
                 zur Geltung kommen und deinem Blick kräftig Ausdruck verleihen.
+                Hast du dir etwas spezielles vorgestellt, lasse es mich wissen
+                und ich setze deine Idee um.
               </p>
             </div>
-          </div>
-        </div>
-        <div class="flex flex-wrap w-full mt-6">
-          <div class="align-middle text-center">
-          <h3
-            class="text-3xl text-gray-800 font-bold leading-none mb-3"
-            id="face"
-          >
-            Face & Lips
-          </h3>
-          <p class="text-gray-600 mb-8 md:text-xl">
-            Als Ergänzung verleihe ich dir noch ein strahlendes Gesicht indem
-            wir deiner Haut Feuchtigkeit spenden und sie reinigen. Dazu boosten
-            wir noch deine Lippen mit unserem speziellem Lip Booster und runden
-            so das ganze Beauty/Wellness Programm ab.
-          </p>
+            <div class="w-full">
+              <img class="mx-auto rounded-full md:p-4" src="/Images/WebP/Wimpern.webp" alt="Wimpernverlängerung"/>
+            </div>
         </div>
         <div class="w-full">
-          <img
-            class="rounded-full md:w-1/2 w-4/5 mx-auto"
-            src="Lippen.png"
-            alt="Gesichtsbehandlung"
-          />
+          <div class="align-middle text-center p-8">
+            <h3 class="text-3xl text-gray-800 font-bold mb-3" id="face">
+              Gesicht & Lippen
+            </h3>
+            <p class="text-gray-600 mb-8 md:text-xl">
+              Als Ergänzung verleihe ich dir noch ein strahlendes Gesicht indem
+              wir deiner Haut Feuchtigkeit spenden und sie reinigen. Dazu boosten
+              wir noch deine Lippen mit unserem speziellem Lip Booster und runden
+              so das ganze Beauty/Wellness Programm ab. Nach diesem Beauty-Programm
+              fühlst du dich wie ein neuer Mensch.
+            </p>
+          </div>
+        <div class="w-full">
+          <img class="mx-auto rounded-full md:p-4" src="/Images/WebP/Lippen.webp" alt="Gesichtsbehandlung"/>
         </div>
       </div>
     </section>
     <section class="bg-white border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-6 pb-12">
-        <h2
-          class="scroll-m-32 w-full pb-4 md:text-4xl text-3xl font-bold leading-tight text-center text-gray-800"
-          id="ubermich"
-        >
+        <h2 class="scroll-m-32 w-full pb-4 md:text-4xl text-3xl font-bold leading-tight text-center text-gray-800"id="ubermich">
           Das kannst <span class="text-[#382c5e] text-4xl">Du</span> von mir erwarten...
         </h2>
         <div class="w-full mb-4">
-          <div
-            class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]"
-          ></div>
+          <div class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]">
+          </div>
         </div>
-        <div
-          class="w-full md:w-1/3 pt-4 p-6 flex flex-col flex-grow flex-shrink"
-        >
-          <div
-            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-          >
-            <a class="flex flex-wrap no-underline hover:no-underline pt-5">
-              <p class="w-full text-gray-600 text-s md:text-sm px-6">
+        <div class="w-full md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <p class="w-full text-gray-600 text-s md:text-sm px-4 pt-4">
                 Qualität
               </p>
-              <div class="w-full font-bold text-xl text-[#382c5e] px-5">
+              <div class="w-full font-bold text-xl text-[#382c5e] px-4">
                 Ich stelle hohe Ansprüche an mich selbst.
               </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
+              <p class="text-gray-800 text-base px-4 mb-5">
                 Meine Arbeit führe ich mit Leidenschaft aus und gebe alles daran
                 deine Ansprüche zu übertreffen. Genaue Arbeit und hochwertiges
                 Material legen dabei eine solide Grundlage. Ich plane für alle
                 meine Kunden auch genug Zeit ein, damit einem perfekten Resultat
                 nichts im Wege steht.
               </p>
-            </a>
           </div>
         </div>
         <div
-          class="w-full md:w-1/3 pt-4 p-6 flex flex-col flex-grow flex-shrink"
-        >
-          <div
-            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-          >
-            <a class="flex flex-wrap no-underline hover:no-underline pt-5">
-              <p class="w-full text-gray-600 text-s md:text-sm px-6">
+          class="w-full md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <p class="w-full text-gray-600 text-s md:text-sm px-4 pt-4">
                 Ehrlichkeit
               </p>
-              <div class="w-full font-bold text-xl text-[#382c5e] px-6">
+              <div class="w-full font-bold text-xl text-[#382c5e] px-4">
                 Offene Kommunikation ist wichtig.
               </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
+              <p class="text-gray-800 text-base px-4 mb-5">
                 Damit die Zufriedenheit aller gewährleistet ist, müssen die
                 Dinge direkt ausgesprochen werden. Nur so ist eine langfristige
                 Kundenzufriedenheit möglich. Sag mir was deine Vorstellungen
                 sind und ich gebe mein Bestes dem möglichst nahe zu kommen.
               </p>
-            </a>
           </div>
         </div>
-        <div
-          class="w-full md:w-1/3 p-6 pt-4 flex flex-col flex-grow flex-shrink"
-        >
-          <div
-            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-          >
-            <a class="flex flex-wrap no-underline hover:no-underline pt-5">
-              <p class="w-full text-gray-600 text-s md:text-sm px-6">
+        <div class="w-full md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <p class="w-full text-gray-600 text-s md:text-sm px-4 pt-4">
                 Flexibilität
               </p>
-              <div class="w-full font-bold text-xl text-[#382c5e] px-6">
+              <div class="w-full font-bold text-xl text-[#382c5e] px-4">
                 Ich arbeite dann, wenn meine Kunden Zeit haben.
               </div>
-              <p class="text-gray-800 text-base px-6 mb-5">
+              <p class="text-gray-800 text-base px-4 mb-5">
                 Schöne Nägel sind wichtig und daher stehe ich auch gerne bereit,
                 wenn es mal dringlich ist. Du kannst dich jederzeit bei mir
                 melden und ich kontaktiere dich so schnell wie möglich.
               </p>
-            </a>
           </div>
         </div>
       </div>
     </section>
-
     <!--Carousel-->
-    <div
-      id="carouselExampleCaptions"
-      class="relative bg-white min-h-96 pb-12"
-      data-twe-carousel-init
-      data-twe-carousel-slide
-      data-twe-smooth-scroll-init>
-      
-      <h2
-      class="relative bg-white w-full pt-12 text-4xl md:text-5xl font-bold leading-tight text-center text-gray-800 bg-white mb-4 px-4"
-      id="angebot"
-    >
+    <div id="carouselExampleCaptions" class="relative bg-white min-h-96 pb-12" data-twe-carousel-init data-twe-carousel-slide data-twe-smooth-scroll-init>
+      <h2 class="relative bg-white w-full pt-12 text-4xl md:text-5xl font-bold leading-tight text-center text-gray-800 bg-white mb-4 px-4" id="angebot">
       Das sagen meine <span class="text-[#382c5e] text-5xl">Kund:innen</span>
-    </h2>
-    <div class="w-full mb-8">
-      <div
-        class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]"
-      ></div>
-    </div>
-      <div
-        class="relative overflow-hidden after:clear-both after:block after:content-[''] place-content-center flex justify-center inline-block">
+      </h2>
+      <div class="w-full mb-8">
+        <div class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]">
+        </div>
+      </div>
+      <div class="relative overflow-hidden after:clear-both after:block after:content-[''] place-content-center flex justify-center inline-block">
         <!--First Testimonial / Carousel item-->
-        <div
-          class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block"
-          data-twe-carousel-active
-          data-twe-carousel-item
-          style="backface-visibility: hidden">
-          <a
-            href="https://maps.app.goo.gl/S8uKkX6hafDRQyoGA"
-            class="mx-auto md:text-xl text-neutral-600"
-          >
+        <div class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block" data-twe-carousel-active data-twe-carousel-item style="backface-visibility: hidden">
+          <a href="https://maps.app.goo.gl/S8uKkX6hafDRQyoGA" class="mx-auto md:text-xl text-neutral-600">
             "Lauras Beauty ist ein sympatisches Beautystudio. Ich hatte einen
             speziellen Wunsch für meine Enkelin und das hat Laura einfach super
             umgesetzt zu 💯% und meine Enkelin war happy meine Enkelin wird
@@ -378,177 +241,87 @@
             <p class="text-neutral-500">- Haru -</p>
           </div>
         </div>
-
         <!--Second Testimonial / Carousel item-->
-        <div
-          class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block"
-          data-twe-carousel-item
-          style="backface-visibility: hidden">
-          <a
-            href="https://maps.app.goo.gl/mvkGEjZYVrmN7wV67"
-            class="mmx-auto md:text-xl text-neutral-600"
-          >
+        <div class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block" data-twe-carousel-item style="backface-visibility: hidden">
+          <a href="https://maps.app.goo.gl/mvkGEjZYVrmN7wV67" class="mmx-auto md:text-xl text-neutral-600">
             "Schönes Nagelstudio, tolle Atmosphäre, super Arbeit und freundliche
             Bedienung. Danke Laura! Meine Frau ist ganz Happy :-D Wir kommen
             gerne wieder."
           </a>
           <p class="text-neutral-500 mb-6">- Ivan M.-</p>
         </div>
-
         <!--Third Testimonial / Carousel item-->
-        <div
-          class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block"
-          data-twe-carousel-item
-          style="backface-visibility: hidden"
-        >
-          <a
-            href="https://maps.app.goo.gl/BAu4nEhLLgcuW6L78"
-            class="mx-auto md:text-xl text-neutral-600"
-          >
+        <div class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block" data-twe-carousel-item style="backface-visibility: hidden">
+          <a href="https://maps.app.goo.gl/BAu4nEhLLgcuW6L78" class="mx-auto md:text-xl text-neutral-600">
             "Saubere Arbeit, tolle Nageldesigns, bin rundum zufrieden😍 …"
           </a>
           <div class="mb-6 mt-12 flex justify-center">
             <p class="text-neutral-500">- Laura K.-</p>
           </div>
         </div>
-
         <!--Forth Testimonial / Carousel item-->
-        <div
-          class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block"
-          data-twe-carousel-item
-          style="backface-visibility: hidden"
-        >
-          <a
-            href="https://maps.app.goo.gl/5TmNrKFZD4ifikhQ6"
-            class="mx-auto md:text-xl text-neutral-600"
-          >
+        <div class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block" data-twe-carousel-item style="backface-visibility: hidden">
+          <a href="https://maps.app.goo.gl/5TmNrKFZD4ifikhQ6" class="mx-auto md:text-xl text-neutral-600">
             "Sehr gute Frau und ganz nett ...und gute Qualität...danke Laura"
           </a>
           <div class="mb-6 mt-12 flex justify-center">
             <p class="text-neutral-500">- Anca G.-</p>
           </div>
-          
         </div>
-
         <!--Fifth Testimonial / Carousel item-->
-        <div
-          class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out  shadow pt-6 px-6 align-middle inline-block"
-          data-twe-carousel-item
-          style="backface-visibility: hidden"
-        >
-          <a
-            href="https://maps.app.goo.gl/urffaKFLosLswUbc6"
-            class="mx-auto md:text-xl text-neutral-600"
-          >
+        <div class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out  shadow pt-6 px-6 align-middle inline-block" data-twe-carousel-item style="backface-visibility: hidden">
+          <a href="https://maps.app.goo.gl/urffaKFLosLswUbc6" class="mx-auto md:text-xl text-neutral-600">
             "Laura hat genau nach meinen Wünschen alles umgesetzt! Ich komme
             wieder…👍🏾 …"
           </a>
           <div class="mb-6 mt-12 flex justify-center">
             <p class="text-neutral-500">- Laura M.-</p>
           </div>
-          
         </div>
-
         <!--Fifth Testimonial / Carousel item-->
-        <div
-          class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block"
-          data-twe-carousel-item
-          style="backface-visibility: hidden"
-        >
-          <a
-            href="https://maps.app.goo.gl/GrNELtramiQ2pPU77"
-            class="mx-auto md:text-xl text-neutral-600"
-          >
+        <div class="my-6 w-4/5 hidden bg-white text-center transition-transform ease-in-out shadow pt-6 px-6 align-middle inline-block" data-twe-carousel-item style="backface-visibility: hidden">
+          <a href="https://maps.app.goo.gl/GrNELtramiQ2pPU77" class="mx-auto md:text-xl text-neutral-600">
             "Das beste Nagelstudio, meine Frau ist nach jedem Besuch bei Laura
             total happy."
           </a>
           <div class="mb-6 mt-12 flex justify-center">
             <p class="text-neutral-500">- Christian S.-</p>
           </div>
-          
         </div>
-
         <!--Carousel Controls - prev item-->
-        <button
-          class="absolute align-middle bottom-0 left-0 top-0 z-[1] flex w-[10%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-          type="button"
-          data-twe-target="#carouselExampleCaptions"
-          data-twe-slide="prev"
-        >
+        <button class="absolute align-middle bottom-0 left-0 top-0 z-[1] flex w-[10%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none" type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="prev">
           <span class="inline-block h-8 w-8">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 24 24"stroke-width="1.5"stroke="currentColor"class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round"d="M15.75 19.5L8.25 12l7.5-7.5"/>
             </svg>
           </span>
-          <span
-            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-            >Previous
+          <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous
           </span>
         </button>
         <!--Carousel Controls - next item-->
-        <button
-          class="absolute bottom-0 right-0 top-0 z-[1] flex w-[10%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-          type="button"
-          data-twe-target="#carouselExampleCaptions"
-          data-twe-slide="next"
-        >
+        <button class="absolute bottom-0 right-0 top-0 z-[1] flex w-[10%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none" type="button" data-twe-target="#carouselExampleCaptions" data-twe-slide="next">
           <span class="inline-block h-8 w-8">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="h-6 w-6"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
+            <svg xmlns="http://www.w3.org/2000/svg"fill="none"viewBox="0 0 24 24"stroke-width="1.5"stroke="currentColor"class="h-6 w-6">
+              <path stroke-linecap="round"stroke-linejoin="round"d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
             </svg>
           </span>
-          <span
-            class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-            >Next
+          <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next
           </span>
         </button>
       </div>
     </div>
-
     <section class="bg-gray-100 py-8">
       <div class="container mx-auto px-2 pt-12 pb-12 text-gray-800">
-        <h2
-          class="scroll-m-32 w-full my- text-5xl font-bold leading-tight text-center text-gray-800"
-          id="preise"
-        >
+        <h2 class="scroll-m-32 w-full my- text-5xl font-bold leading-tight text-center text-gray-800"id="preise">
           Meine Preise
         </h2>
         <div class="w-full">
-          <div
-            class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]"
-          ></div>
+          <div class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]">
+          </div>
         </div>
-        <div
-          class="flex flex-col sm:flex-row justify-center pt-12"
-        >
-          <div
-            class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white"
-          >
-            <div
-              class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-            >
+        <div class="flex flex-col sm:flex-row justify-center pt-12">
+          <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white">
+            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
               <div class="w-full p-8 text-3xl font-bold text-center">
                 Lashes
               </div>
@@ -565,12 +338,8 @@
               </ul>
             </div>
           </div>
-          <div
-            class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10"
-          >
-            <div
-              class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-            >
+          <div class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
+            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
               <div class="w-full p-8 text-3xl font-bold text-center">Nails</div>
               <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
               <ul class="w-full text-center text-base">
@@ -584,12 +353,8 @@
               </ul>
             </div>
           </div>
-          <div
-            class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
-          >
-            <div
-              class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
-            >
+          <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
+            <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
               <div class="w-full p-8 text-3xl font-bold text-center">
                 Face
               </div>
@@ -604,21 +369,17 @@
       </div>
     </section>
     <section class="bg-white py-8 align-middle">
-        <h2
-          class="w-full my-2 md:text-5xl mx-4 text-4xl font-bold leading-tight text-center text-gray-800"
-          id="hierfindestdumich"
-        >
+        <h2 class="w-full my-2 md:text-5xl mx-4 text-4xl font-bold leading-tight text-center text-gray-800" id="hierfindestdumich">
           Hier findest <span class="text-[#382c5e] md:text-5xl text-4xl">Du</span> mich...
         </h2>
         <div class="w-full mb-4">
-          <div
-            class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]"
-          ></div>
+          <div class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]"></div>
         </div>
         <div class="mx-auto md:w-4/5 w-7/8 pt-4 p-6 items-center align-middle">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5415.062428115541!2d8.181759599999996!3d47.264869399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479019000539e43d%3A0xc80ef50cd573334c!2sLauras%20Beauty%20Reinach%20AG!5e0!3m2!1sde!2sch!4v1713693886679!5m2!1sde!2sch"
               width="100%"
+              title="Maps"
               height="500"
               style="border: 0"
               allowfullscreen=""
@@ -628,141 +389,35 @@
         </div>
     </section>
     <!-- Change the colour #f8fafc to match the previous section colour -->
-    <svg
-      class="wave-top"
-      viewBox="0 0 1439 147"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-    >
+    <svg class="wave-top" viewBox="0 0 1439 147"version="1.1"xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
           <g class="wave" fill="#ffffff">
-            <path
-              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
-            ></path>
+            <path d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"></path>
           </g>
           <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
-            <g
-              transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
-            >
-              <path
-                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
-                opacity="0.100000001"
-              ></path>
-              <path
-                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
-                opacity="0.100000001"
-              ></path>
-              <path
-                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
-                opacity="0.200000003"
-              ></path>
+            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+              <path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"opacity="0.100000001"></path>
+              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"opacity="0.200000003"></path>
             </g>
           </g>
         </g>
       </g>
     </svg>
     <section class="container mx-auto text-center py-6 mb-12 scroll-m-32" id="anmelden" >
-      <h2
-        class="w-full my-2 text-4xl md:text-5xl font-bold leading-tight text-center text-white"
-      >
+      <h2 class="w-full my-2 text-4xl md:text-5xl font-bold leading-tight text-center text-white">
         Melde <span class="text-[#382c5e] md:text-5xl text-4xl font-bold">Dich</span> jetzt an!
       </h2>
       <div class="w-full mb-4">
-        <div
-          class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-neutral-900"
-        ></div>
+        <div class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-neutral-900"></div>
       </div>
       <h3 class="text-3xl leading-tight">Ich freue mich auf <span class="text-[#382c5e] text-4xl font-bold">Dich!</span></h3>
       <div class="mx-auto mt-6 flex w-7/8 max-w-96 align-middle">
-        <button
-            class="mx-auto hover:text-[#382c5e] bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8  hover:scale-105 duration-300"
-          >
-            <a href="https://wa.me/1XXXXXXXXXX?text=Hallo%20Laura!%20Ich%20bin%20an%20einer%20.........%20interessiert.%20">WhatsApp</a>
-          </button>
-          <button
-            class="mx-auto hover:text-[#382c5e] bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8  hover:scale-105 duration-300"
-          >
-            <a href="mailto:info@laurasbeauty.ch">E-Mail</a>
-          </button></div>
-      
-          
+            <a href="https://wa.me/1XXXXXXXXXX?text=Hallo%20Laura!%20Ich%20bin%20an%20einer%20.........%20interessiert.%20"  class="mx-auto hover:bg-[#382c5e] hover:text-white bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8  hover:scale-105 duration-300" >WhatsApp</a>
+            <a href="mailto:info@laurasbeauty.ch" class="mx-auto hover:bg-[#382c5e] hover:text-white bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8  hover:scale-105 duration-300">E-Mail</a>
+        </div>    
     </section>
-    <div
-      class="hidden block max-w-md rounded-lg bg-white p-6 m-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] mx-auto"
-    >
-      <form action="#submit" id="form">
-        <!--Name input-->
-        <div class="relative mb-6" data-twe-input-wrapper-init>
-          <input
-            type="text"
-            class="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none text-neutral-700 [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-            id="exampleInput7"
-            placeholder="Name"
-          />
-          <label
-            for="exampleInput7"
-            class="pointer-events-none absolute border-1 left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-            >Name
-          </label>
-        </div>
-
-        <!--Email input-->
-        <div class="relative mb-6" data-twe-input-wrapper-init>
-          <input
-            type="email"
-            class="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-700 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-            id="exampleInput8"
-            placeholder="E-Mail"
-          />
-          <label
-            for="exampleInput8"
-            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-            >E-Mail
-          </label>
-        </div>
-
-        <!--Tel Input-->
-        <div class="relative mb-6" data-twe-input-wrapper-init>
-          <input
-            type="tel"
-            class="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-700 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-            id="exampleInput8"
-            placeholder="Telefon"
-          />
-          <label
-            for="exampleInput9"
-            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-            >Telefon
-          </label>
-        </div>
-
-        <!--Message textarea-->
-        <div class="relative mb-6" data-twe-input-wrapper-init>
-          <textarea
-            class="peer block min-h-[auto] w-full rounded border-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] text-neutral-700 outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-            id="exampleFormControlTextarea13"
-            rows="3"
-            placeholder="Nachricht"
-          ></textarea>
-          <label
-            for="exampleFormControlTextarea13"
-            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-            >Deine Nachricht
-          </label>
-        </div>
-        <!--Submit button-->
-        <button
-          type="submit"
-          class="text-gray-800 w-full rounded bg-white pb-2 pt-2.5 text-neutral-500  shadow-[0_4px_9px_-4px_#3b71ca] transition hover:bg-[#382c5e] hover:text-white"
-          data-twe-ripple-init
-          data-twe-ripple-color="light"
-        >
-          Senden
-        </button>
-      </form>
-    </div>
     <!--Footer-->
     <footer class="bg-white">
       <div class="container mx-auto px-8">
@@ -816,14 +471,14 @@
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a
                   href="https://www.instagram.com/laurasbeautyreinachag"
-                  class="no-underline hover:underline text-gray-800 hover:text-[#382c5e]"
+                  class="no-underline text-gray-800 hover:text-[#382c5e]"
                   >Instagram</a
                 >
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a
                   href="https://wa.me/1XXXXXXXXXX?text=Hallo%20Laura!%20Ich%20bin%20an%20einer%20.........%20interessiert.%20"
-                  class="no-underline hover:underline text-gray-800 hover:text-[#382c5e]"
+                  class="no-underline text-gray-800 hover:text-[#382c5e]"
                   >Whatsapp</a
                 >
               </li>
