@@ -18,7 +18,7 @@
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif">
     <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <nav id="header" class="fixed w-screen z-30 top-0 text-white">
       <div class="container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div class="pl-4 flex items-center">
           <a
@@ -55,16 +55,16 @@
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0"/>
     </nav>
     <!--Hero-->
-    <div class="pt-24">
+    <section class="pt-24 mx-auto w-full px-4">
       <div
-        class="container  mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        class="flex flex-wrap flex-col md:flex-row">
         <!--Left Col-->
-        <div class="mx-auto flex flex-col md:w-2/5 justify-center items-start align-middle md:text-left">
-          <p class="uppercase tracking-loose align-middle md:text-left">Lashes & Nails</p>
-          <h1 class="my-4 text-5xl font-bold leading-tight">
+        <div class="w-full flex flex-col md:w-2/5">
+          <p class="uppercase text-center md:text-left">Lashes & Nails</p>
+          <h1 class="my-4 text-4xl font-bold text-center md:text-left">
             <span class="uppercase text-2xl font-normal">Nagelstudio</span> <br>Hallo und Herzlich Willkommen!
           </h1>
-          <p class="leading-normal text-2xl mb-8">
+          <p class="p-4 leading-normal text-2xl mb-8 text-center md:text-left">
             Mein Name ist Laura und ich begrüsse Dich ganz herzlich in meinem Nagelstudio im schönen Reinach/AG.
           </p>
           <div class="flex justify-center align-middle mx-auto items-center">
@@ -75,12 +75,12 @@
           
         </div>
         <!--Right Col-->
-        <div class="flex flex-col py-5 p-5 items-center align-middle max-w-md md:w-2/5 mb-12">
-          <img class="rounded-full max-w-xs" src="/Images/WebP/Laura.webp" alt="Nagelstudio Laura Stefanelli"/>
+        <div class="flex flex-col py-5 p-5 max-w-md md:w-2/5 mb-12">
+          <img class="rounded-full" src="/Images/WebP/Laura.webp" alt="Nagelstudio Laura Stefanelli"/>
         </div>
       </div>
-    </div>
-    <div class="relative -mt-15 lg:-mt-24">
+    </section>
+    <div class="relative">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -137,7 +137,7 @@
               </p>
             </div>
             <div class="">
-              <img class="mx-auto rounded-full md:p-4 max-w-xs" src="/Images/WebP/Wimpern.webp" alt="Wimpernverlängerung"/>
+              <img class="mx-auto rounded-full p-4 max-w-xs" src="/Images/WebP/Wimpern.webp" alt="Wimpernverlängerung"/>
             </div>
         </div>
         <div class="">
@@ -387,6 +387,78 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
         </div>
+    </section>
+    <section class="bg-gray-100 py-8 align-middle items-center">
+      <div class="container text-center flex flex-wrap pt-6">
+        <h2 class="scroll-m-32 text-gray-800 text-center pb-4 w-full md:text-4xl text-3xl font-bold">
+          Häufige Fragen...
+        </h2>
+        <div class="mb-4">
+          <div class="h-1 mx-auto bg-gradient-to-r w-64 opacity-70 rounded-t from-[#382c5e]">
+          </div>
+        </div>
+        <div class="md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="font-bold text-xl text-[#382c5e] pt-4 px-4">
+                Wie kann ich bezahlen?
+              </div>
+              <p class="text-gray-800 text-base px-4 mb-5">
+                Bei uns im Nagelstudio kannst du per Twint oder bar bezahlen.
+              </p>
+          </div>
+        </div>
+        <div
+          class="md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="font-bold text-xl text-[#382c5e] px-4 pt-4">
+                Wie kann ich Termine vereinbaren?
+              </div>
+              <p class="text-gray-800 text-base px-4 mb-5">
+                Aktuell ist es möglich Termine über Telefon oder Whatsapp anzufragen.
+              </p>
+          </div>
+        </div>
+        <div class="md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="font-bold text-xl text-[#382c5e] px-4 pt-4">
+                Bis wann kann ich meinen Termin kostenlos stornieren?
+              </div>
+              <p class="text-gray-800 text-base px-4 mb-5">
+                Die Termine können bis mindestens 24h vorher ohne Kostenfolge storniert werden. Danach werden pauschal 50 Franken verrechnet.
+              </p>
+          </div>
+        </div>
+        <div class="md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="font-bold text-xl text-[#382c5e] px-4 pt-4">
+                Wo kann ich parkieren?
+              </div>
+              <p class="text-gray-800 text-base px-4 mb-5">
+                Direkt vor dem Nagelstudio hat es einen Kundenparkplatz. Ist dieser besetz hat einen Carport neben dem Haus.
+              </p>
+          </div>
+        </div>
+        <div class="md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="font-bold text-xl text-[#382c5e] px-4 pt-4">
+                Darf ich mein Kind mitnehmen?
+              </div>
+              <p class="text-gray-800 text-base px-4 mb-5">
+                Natürlich, Kinder sind jederzeit herzlich willkommen.
+              </p>
+          </div>
+        </div>
+        <div class="md:w-1/3 p-4 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+              <div class="font-bold text-xl text-[#382c5e] px-4 pt-4">
+                Kann ich bei dir einen Gutschein bestellen?
+              </div>
+              <p class="text-gray-800 text-base px-4 mb-5">
+                Klar, gib mir am Besten per E-Mail oder Whatsapp den Betrag und die Rechnungsadresse durch.
+              </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="bg-white p-8 align-middle">
       <div class="container">
